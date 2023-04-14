@@ -14,7 +14,7 @@
 </p>
 <h4><font size="2"><a href="https://youtube.com/channel/UCa37vxxUI-XULKw_sHb4A5g"><font color="red">SUBSCRIBE</font>
 </h4>
-<h4><font size="2"><a href="https://www.instagram.com/fcvkf.sncn/?hl=id"><font color="red">FOLLOW INSTAGRAM</font>
+<h4><font size="2"><a href="https://www.instagram.com/fcvkf.sncn/?hl=id"><font color="red">INSTAGRAM</font>
 </h4>
 <h4><font size="2"><a href="https://www.tiktok.com/@fcvkf.sncn"><font color="red">TIKTOK</font>          
 </p>
