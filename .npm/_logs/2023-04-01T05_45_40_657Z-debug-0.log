@@ -1,0 +1,372 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.6.2
+2 info using node@v18.15.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 18ms
+6 timing config:load:builtin Completed in 18ms
+7 timing config:load:cli Completed in 8ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/container/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 32ms
+16 timing npm:load:configload Completed in 32ms
+17 timing npm:load:mkdirpcache Completed in 0ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install
+20 verbose argv "install"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 2ms
+23 timing npm:load:display Completed in 2ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-04-01T05_45_40_657Z-
+25 verbose logfile /home/container/.npm/_logs/2023-04-01T05_45_40_657Z-debug-0.log
+26 timing npm:load:logFile Completed in 4ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 1ms
+29 timing npm:load Completed in 43ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile start cleaning logs, removing 1 files
+32 silly logfile done cleaning log files
+33 timing arborist:ctor Completed in 0ms
+34 timing idealTree:init Completed in 2138ms
+35 timing idealTree:userRequests Completed in 0ms
+36 silly idealTree buildDeps
+37 silly fetch manifest @adiwajshing/baileys@github:aztecs444/baileys
+38 silly fetch manifest @adiwajshing/keyed-db@^0.2.4
+39 http fetch GET 200 https://registry.npmjs.org/@adiwajshing%2fkeyed-db 1970ms (cache revalidated)
+40 silly fetch manifest jimp@^0.16.1
+41 http fetch GET 200 https://registry.npmjs.org/jimp 29ms (cache revalidated)
+42 silly fetch manifest link-preview-js@^2.1.13
+43 http fetch GET 200 https://registry.npmjs.org/link-preview-js 835ms (cache revalidated)
+44 silly fetch manifest qrcode-terminal@^0.12.0
+45 http fetch GET 200 https://registry.npmjs.org/qrcode-terminal 27ms (cache revalidated)
+46 silly fetch manifest sharp@^0.30.5
+47 http fetch GET 200 https://registry.npmjs.org/sharp 883ms (cache revalidated)
+48 silly fetch manifest g-i-s@^2.1.6
+49 http fetch GET 200 https://registry.npmjs.org/g-i-s 22ms (cache revalidated)
+50 silly placeDep ROOT @adiwajshing/baileys@6.0.3 REPLACE for: Rezyy MD@1.0.1 want: github:aztecs444/baileys
+51 silly placeDep ROOT g-i-s@2.1.6 OK for: Rezyy MD@1.0.1 want: ^2.1.6
+52 silly fetch manifest libsignal@git+https://github.com/amiruldev20/signal
+53 timing idealTree:#root Completed in 7717ms
+54 silly placeDep ROOT libsignal@2.0.2 OK for: baileys@6.0.3 want: git+https://github.com/amiruldev20/signal
+55 silly fetch manifest protobufjs@6.8.8
+56 http fetch GET 200 https://registry.npmjs.org/protobufjs 52ms (cache revalidated)
+57 timing idealTree:node_modules/@adiwajshing/baileys Completed in 74ms
+58 silly fetch manifest whois@latest
+59 http fetch GET 200 https://registry.npmjs.org/whois 907ms (cache revalidated)
+60 silly placeDep ROOT whois@2.14.0 REPLACE for: caliph-api@0.8.6 want: latest
+61 silly fetch manifest yargs@^15.4.1
+62 http fetch GET 200 https://registry.npmjs.org/yargs 25ms (cache revalidated)
+63 timing idealTree:node_modules/caliph-api Completed in 967ms
+64 timing idealTree:node_modules/g-i-s Completed in 0ms
+65 silly placeDep node_modules/libsignal protobufjs@6.8.8 OK for: libsignal@2.0.2 want: 6.8.8
+66 silly fetch manifest @types/node@^10.1.0
+67 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 51ms (cache revalidated)
+68 timing idealTree:node_modules/libsignal Completed in 103ms
+69 silly placeDep node_modules/whois yargs@15.4.1 OK for: whois@2.14.0 want: ^15.4.1
+70 silly fetch manifest cliui@^6.0.0
+71 silly fetch manifest yargs-parser@^18.1.2
+72 http fetch GET 200 https://registry.npmjs.org/yargs-parser 96ms (cache revalidated)
+73 http fetch GET 200 https://registry.npmjs.org/cliui 120ms (cache revalidated)
+74 timing idealTree:node_modules/whois Completed in 123ms
+75 silly placeDep node_modules/libsignal @types/node@10.17.60 OK for: protobufjs@6.8.8 want: ^10.1.0
+76 timing idealTree:node_modules/libsignal/node_modules/protobufjs Completed in 1ms
+77 timing idealTree:node_modules/libsignal/node_modules/@types/node Completed in 0ms
+78 silly placeDep node_modules/whois cliui@6.0.0 OK for: yargs@15.4.1 want: ^6.0.0
+79 silly placeDep node_modules/whois yargs-parser@18.1.3 OK for: yargs@15.4.1 want: ^18.1.2
+80 silly fetch manifest wrap-ansi@^6.2.0
+81 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 33ms (cache revalidated)
+82 timing idealTree:node_modules/whois/node_modules/yargs Completed in 39ms
+83 silly placeDep node_modules/whois wrap-ansi@6.2.0 OK for: cliui@6.0.0 want: ^6.2.0
+84 timing idealTree:node_modules/whois/node_modules/cliui Completed in 1ms
+85 timing idealTree:node_modules/whois/node_modules/wrap-ansi Completed in 0ms
+86 timing idealTree:node_modules/whois/node_modules/yargs-parser Completed in 0ms
+87 timing idealTree:buildDeps Completed in 9033ms
+88 timing idealTree:fixDepFlags Completed in 22ms
+89 timing idealTree Completed in 11202ms
+90 timing reify:loadTrees Completed in 11204ms
+91 timing reify:diffTrees Completed in 76ms
+92 silly reify mark retired [
+92 silly reify   '/home/container/node_modules/acorn',
+92 silly reify   '/home/container/node_modules/.bin/acorn'
+92 silly reify ]
+93 silly reify mark retired [
+93 silly reify   '/home/container/node_modules/acorn-globals/node_modules/acorn',
+93 silly reify   '/home/container/node_modules/acorn-globals/node_modules/.bin/acorn'
+93 silly reify ]
+94 silly reify mark retired [
+94 silly reify   '/home/container/node_modules/caliph-api/node_modules/mathjs',
+94 silly reify   '/home/container/node_modules/caliph-api/node_modules/.bin/mathjs'
+94 silly reify ]
+95 silly reify mark retired [
+95 silly reify   '/home/container/node_modules/cfonts',
+95 silly reify   '/home/container/node_modules/.bin/cfonts'
+95 silly reify ]
+96 silly reify mark retired [
+96 silly reify   '/home/container/node_modules/color-support',
+96 silly reify   '/home/container/node_modules/.bin/color-support'
+96 silly reify ]
+97 silly reify mark retired [
+97 silly reify   '/home/container/node_modules/escodegen',
+97 silly reify   '/home/container/node_modules/.bin/esgenerate',
+97 silly reify   '/home/container/node_modules/.bin/escodegen'
+97 silly reify ]
+98 silly reify mark retired [
+98 silly reify   '/home/container/node_modules/esprima',
+98 silly reify   '/home/container/node_modules/.bin/esparse',
+98 silly reify   '/home/container/node_modules/.bin/esvalidate'
+98 silly reify ]
+99 silly reify mark retired [
+99 silly reify   '/home/container/node_modules/fast-xml-parser',
+99 silly reify   '/home/container/node_modules/.bin/fxparser'
+99 silly reify ]
+100 silly reify mark retired [
+100 silly reify   '/home/container/node_modules/google-it',
+100 silly reify   '/home/container/node_modules/.bin/google-it'
+100 silly reify ]
+101 silly reify mark retired [
+101 silly reify   '/home/container/node_modules/instatouch',
+101 silly reify   '/home/container/node_modules/.bin/instatouch'
+101 silly reify ]
+102 silly reify mark retired [
+102 silly reify   '/home/container/node_modules/json2csv',
+102 silly reify   '/home/container/node_modules/.bin/json2csv'
+102 silly reify ]
+103 silly reify mark retired [
+103 silly reify   '/home/container/node_modules/knex',
+103 silly reify   '/home/container/node_modules/.bin/knex'
+103 silly reify ]
+104 silly reify mark retired [ '/home/container/node_modules/libsignal' ]
+105 silly reify mark retired [
+105 silly reify   '/home/container/node_modules/make-dir/node_modules/semver',
+105 silly reify   '/home/container/node_modules/make-dir/node_modules/.bin/semver'
+105 silly reify ]
+106 silly reify mark retired [
+106 silly reify   '/home/container/node_modules/mathjs',
+106 silly reify   '/home/container/node_modules/.bin/mathjs'
+106 silly reify ]
+107 silly reify mark retired [
+107 silly reify   '/home/container/node_modules/mime',
+107 silly reify   '/home/container/node_modules/.bin/mime'
+107 silly reify ]
+108 silly reify mark retired [
+108 silly reify   '/home/container/node_modules/mkdirp',
+108 silly reify   '/home/container/node_modules/.bin/mkdirp'
+108 silly reify ]
+109 silly reify mark retired [
+109 silly reify   '/home/container/node_modules/mustache',
+109 silly reify   '/home/container/node_modules/.bin/mustache'
+109 silly reify ]
+110 silly reify mark retired [
+110 silly reify   '/home/container/node_modules/nopt',
+110 silly reify   '/home/container/node_modules/.bin/nopt'
+110 silly reify ]
+111 silly reify mark retired [
+111 silly reify   '/home/container/node_modules/node-cron/node_modules/uuid',
+111 silly reify   '/home/container/node_modules/node-cron/node_modules/.bin/uuid'
+111 silly reify ]
+112 silly reify mark retired [
+112 silly reify   '/home/container/node_modules/node-fzf',
+112 silly reify   '/home/container/node_modules/.bin/nfzf'
+112 silly reify ]
+113 silly reify mark retired [
+113 silly reify   '/home/container/node_modules/node-gyp',
+113 silly reify   '/home/container/node_modules/.bin/node-gyp'
+113 silly reify ]
+114 silly reify mark retired [
+114 silly reify   '/home/container/node_modules/pino',
+114 silly reify   '/home/container/node_modules/.bin/pino'
+114 silly reify ]
+115 silly reify mark retired [
+115 silly reify   '/home/container/node_modules/protobufjs',
+115 silly reify   '/home/container/node_modules/.bin/pbjs',
+115 silly reify   '/home/container/node_modules/.bin/pbts'
+115 silly reify ]
+116 silly reify mark retired [
+116 silly reify   '/home/container/node_modules/qrcode',
+116 silly reify   '/home/container/node_modules/.bin/qrcode'
+116 silly reify ]
+117 silly reify mark retired [
+117 silly reify   '/home/container/node_modules/qrcode-terminal',
+117 silly reify   '/home/container/node_modules/.bin/qrcode-terminal'
+117 silly reify ]
+118 silly reify mark retired [
+118 silly reify   '/home/container/node_modules/pixelmatch',
+118 silly reify   '/home/container/node_modules/.bin/pixelmatch'
+118 silly reify ]
+119 silly reify mark retired [
+119 silly reify   '/home/container/node_modules/request/node_modules/uuid',
+119 silly reify   '/home/container/node_modules/request/node_modules/.bin/uuid'
+119 silly reify ]
+120 silly reify mark retired [
+120 silly reify   '/home/container/node_modules/resolve',
+120 silly reify   '/home/container/node_modules/.bin/resolve'
+120 silly reify ]
+121 silly reify mark retired [
+121 silly reify   '/home/container/node_modules/semver',
+121 silly reify   '/home/container/node_modules/.bin/semver'
+121 silly reify ]
+122 silly reify mark retired [
+122 silly reify   '/home/container/node_modules/rimraf',
+122 silly reify   '/home/container/node_modules/.bin/rimraf'
+122 silly reify ]
+123 silly reify mark retired [
+123 silly reify   '/home/container/node_modules/uglify-js',
+123 silly reify   '/home/container/node_modules/.bin/uglifyjs'
+123 silly reify ]
+124 silly reify mark retired [
+124 silly reify   '/home/container/node_modules/uuid',
+124 silly reify   '/home/container/node_modules/.bin/uuid'
+124 silly reify ]
+125 silly reify mark retired [
+125 silly reify   '/home/container/node_modules/which',
+125 silly reify   '/home/container/node_modules/.bin/which'
+125 silly reify ]
+126 silly reify mark retired [
+126 silly reify   '/home/container/node_modules/window-size',
+126 silly reify   '/home/container/node_modules/.bin/window-size'
+126 silly reify ]
+127 silly reify mark retired [
+127 silly reify   '/home/container/node_modules/whois',
+127 silly reify   '/home/container/node_modules/.bin/whois'
+127 silly reify ]
+128 silly reify mark retired [
+128 silly reify   '/home/container/node_modules/yt-search',
+128 silly reify   '/home/container/node_modules/.bin/yt-search',
+128 silly reify   '/home/container/node_modules/.bin/yt-search-video',
+128 silly reify   '/home/container/node_modules/.bin/yt-search-audio'
+128 silly reify ]
+129 silly reify mark retired [ '/home/container/node_modules/@adiwajshing/baileys' ]
+130 silly reify mark retired [
+130 silly reify   '/home/container/node_modules/@aws-sdk/middleware-retry/node_modules/uuid',
+130 silly reify   '/home/container/node_modules/@aws-sdk/middleware-retry/node_modules/.bin/uuid'
+130 silly reify ]
+131 silly reify mark retired [
+131 silly reify   '/home/container/node_modules/@jimp/core/node_modules/mkdirp',
+131 silly reify   '/home/container/node_modules/@jimp/core/node_modules/.bin/mkdirp'
+131 silly reify ]
+132 silly reify mark retired [
+132 silly reify   '/home/container/node_modules/@mapbox/node-pre-gyp',
+132 silly reify   '/home/container/node_modules/.bin/node-pre-gyp'
+132 silly reify ]
+133 silly reify mark retired [
+133 silly reify   '/home/container/node_modules/sshpk',
+133 silly reify   '/home/container/node_modules/.bin/sshpk-conv',
+133 silly reify   '/home/container/node_modules/.bin/sshpk-sign',
+133 silly reify   '/home/container/node_modules/.bin/sshpk-verify'
+133 silly reify ]
+134 silly reify moves {
+134 silly reify   '/home/container/node_modules/acorn': '/home/container/node_modules/.acorn-2AtqRIPU',
+134 silly reify   '/home/container/node_modules/.bin/acorn': '/home/container/node_modules/.bin/.acorn-LuH4a0XZ',
+134 silly reify   '/home/container/node_modules/acorn-globals/node_modules/acorn': '/home/container/node_modules/acorn-globals/node_modules/.acorn-igOfmnxh',
+134 silly reify   '/home/container/node_modules/acorn-globals/node_modules/.bin/acorn': '/home/container/node_modules/acorn-globals/node_modules/.bin/.acorn-fApFm1Ey',
+134 silly reify   '/home/container/node_modules/caliph-api/node_modules/mathjs': '/home/container/node_modules/caliph-api/node_modules/.mathjs-RdJTzJAX',
+134 silly reify   '/home/container/node_modules/caliph-api/node_modules/.bin/mathjs': '/home/container/node_modules/caliph-api/node_modules/.bin/.mathjs-XVGjkjCp',
+134 silly reify   '/home/container/node_modules/cfonts': '/home/container/node_modules/.cfonts-QgmKoJ7a',
+134 silly reify   '/home/container/node_modules/.bin/cfonts': '/home/container/node_modules/.bin/.cfonts-BoY2HhAx',
+134 silly reify   '/home/container/node_modules/color-support': '/home/container/node_modules/.color-support-5ac2lo4P',
+134 silly reify   '/home/container/node_modules/.bin/color-support': '/home/container/node_modules/.bin/.color-support-ZjgMNEO4',
+134 silly reify   '/home/container/node_modules/escodegen': '/home/container/node_modules/.escodegen-0Q6hQOIs',
+134 silly reify   '/home/container/node_modules/.bin/esgenerate': '/home/container/node_modules/.bin/.esgenerate-25ORikhX',
+134 silly reify   '/home/container/node_modules/.bin/escodegen': '/home/container/node_modules/.bin/.escodegen-jCJWJ3dw',
+134 silly reify   '/home/container/node_modules/esprima': '/home/container/node_modules/.esprima-2SDJxbBg',
+134 silly reify   '/home/container/node_modules/.bin/esparse': '/home/container/node_modules/.bin/.esparse-ARROAjjJ',
+134 silly reify   '/home/container/node_modules/.bin/esvalidate': '/home/container/node_modules/.bin/.esvalidate-LIK8IsYg',
+134 silly reify   '/home/container/node_modules/fast-xml-parser': '/home/container/node_modules/.fast-xml-parser-9InGuqkU',
+134 silly reify   '/home/container/node_modules/.bin/fxparser': '/home/container/node_modules/.bin/.fxparser-8II6uP1h',
+134 silly reify   '/home/container/node_modules/google-it': '/home/container/node_modules/.google-it-KqYHzT11',
+134 silly reify   '/home/container/node_modules/.bin/google-it': '/home/container/node_modules/.bin/.google-it-adVO1PM0',
+134 silly reify   '/home/container/node_modules/instatouch': '/home/container/node_modules/.instatouch-fhsAUFJ8',
+134 silly reify   '/home/container/node_modules/.bin/instatouch': '/home/container/node_modules/.bin/.instatouch-VDCn0jFM',
+134 silly reify   '/home/container/node_modules/json2csv': '/home/container/node_modules/.json2csv-fhR7vq5e',
+134 silly reify   '/home/container/node_modules/.bin/json2csv': '/home/container/node_modules/.bin/.json2csv-2KaaUzPA',
+134 silly reify   '/home/container/node_modules/knex': '/home/container/node_modules/.knex-oAUcnHi6',
+134 silly reify   '/home/container/node_modules/.bin/knex': '/home/container/node_modules/.bin/.knex-Uz54jUCg',
+134 silly reify   '/home/container/node_modules/libsignal': '/home/container/node_modules/.libsignal-mQOErmg7',
+134 silly reify   '/home/container/node_modules/make-dir/node_modules/semver': '/home/container/node_modules/make-dir/node_modules/.semver-tqsOINOO',
+134 silly reify   '/home/container/node_modules/make-dir/node_modules/.bin/semver': '/home/container/node_modules/make-dir/node_modules/.bin/.semver-QeScplJu',
+134 silly reify   '/home/container/node_modules/mathjs': '/home/container/node_modules/.mathjs-GYYpizwE',
+134 silly reify   '/home/container/node_modules/.bin/mathjs': '/home/container/node_modules/.bin/.mathjs-LDLtFvAZ',
+134 silly reify   '/home/container/node_modules/mime': '/home/container/node_modules/.mime-OqpHjQqc',
+134 silly reify   '/home/container/node_modules/.bin/mime': '/home/container/node_modules/.bin/.mime-eoW5cL08',
+134 silly reify   '/home/container/node_modules/mkdirp': '/home/container/node_modules/.mkdirp-xuUfkeqX',
+134 silly reify   '/home/container/node_modules/.bin/mkdirp': '/home/container/node_modules/.bin/.mkdirp-b95gaefK',
+134 silly reify   '/home/container/node_modules/mustache': '/home/container/node_modules/.mustache-ErQGImV4',
+134 silly reify   '/home/container/node_modules/.bin/mustache': '/home/container/node_modules/.bin/.mustache-FMHgYm2N',
+134 silly reify   '/home/container/node_modules/nopt': '/home/container/node_modules/.nopt-IWywp9kP',
+134 silly reify   '/home/container/node_modules/.bin/nopt': '/home/container/node_modules/.bin/.nopt-PFHIzoR7',
+134 silly reify   '/home/container/node_modules/node-cron/node_modules/uuid': '/home/container/node_modules/node-cron/node_modules/.uuid-cW6KZPUn',
+134 silly reify   '/home/container/node_modules/node-cron/node_modules/.bin/uuid': '/home/container/node_modules/node-cron/node_modules/.bin/.uuid-ILcMWWHg',
+134 silly reify   '/home/container/node_modules/node-fzf': '/home/container/node_modules/.node-fzf-gRPFblFK',
+134 silly reify   '/home/container/node_modules/.bin/nfzf': '/home/container/node_modules/.bin/.nfzf-z1MKHUIE',
+134 silly reify   '/home/container/node_modules/node-gyp': '/home/container/node_modules/.node-gyp-Dv3bjjMj',
+134 silly reify   '/home/container/node_modules/.bin/node-gyp': '/home/container/node_modules/.bin/.node-gyp-lzpw4JPn',
+134 silly reify   '/home/container/node_modules/pino': '/home/container/node_modules/.pino-W4hvP06Q',
+134 silly reify   '/home/container/node_modules/.bin/pino': '/home/container/node_modules/.bin/.pino-XdK6afH4',
+134 silly reify   '/home/container/node_modules/protobufjs': '/home/container/node_modules/.protobufjs-a46ldCGB',
+134 silly reify   '/home/container/node_modules/.bin/pbjs': '/home/container/node_modules/.bin/.pbjs-NzJRM0ey',
+134 silly reify   '/home/container/node_modules/.bin/pbts': '/home/container/node_modules/.bin/.pbts-ycRLgpmv',
+134 silly reify   '/home/container/node_modules/qrcode': '/home/container/node_modules/.qrcode-1mCmfTHy',
+134 silly reify   '/home/container/node_modules/.bin/qrcode': '/home/container/node_modules/.bin/.qrcode-teBEV8nx',
+134 silly reify   '/home/container/node_modules/qrcode-terminal': '/home/container/node_modules/.qrcode-terminal-53hvKJrm',
+134 silly reify   '/home/container/node_modules/.bin/qrcode-terminal': '/home/container/node_modules/.bin/.qrcode-terminal-78EnKQFw',
+134 silly reify   '/home/container/node_modules/pixelmatch': '/home/container/node_modules/.pixelmatch-CDVOOmg0',
+134 silly reify   '/home/container/node_modules/.bin/pixelmatch': '/home/container/node_modules/.bin/.pixelmatch-9hk98AgW',
+134 silly reify   '/home/container/node_modules/request/node_modules/uuid': '/home/container/node_modules/request/node_modules/.uuid-NGGAEIZU',
+134 silly reify   '/home/container/node_modules/request/node_modules/.bin/uuid': '/home/container/node_modules/request/node_modules/.bin/.uuid-pDIPFL0Q',
+134 silly reify   '/home/container/node_modules/resolve': '/home/container/node_modules/.resolve-JQ815DJy',
+134 silly reify   '/home/container/node_modules/.bin/resolve': '/home/container/node_modules/.bin/.resolve-CN4V8UI9',
+134 silly reify   '/home/container/node_modules/semver': '/home/container/node_modules/.semver-clkkOKMn',
+134 silly reify   '/home/container/node_modules/.bin/semver': '/home/container/node_modules/.bin/.semver-6FrAJfdb',
+134 silly reify   '/home/container/node_modules/rimraf': '/home/container/node_modules/.rimraf-1HSCxFRz',
+134 silly reify   '/home/container/node_modules/.bin/rimraf': '/home/container/node_modules/.bin/.rimraf-jPGCiEH2',
+134 silly reify   '/home/container/node_modules/uglify-js': '/home/container/node_modules/.uglify-js-YlGPa60S',
+134 silly reify   '/home/container/node_modules/.bin/uglifyjs': '/home/container/node_modules/.bin/.uglifyjs-snz2TRJD',
+134 silly reify   '/home/container/node_modules/uuid': '/home/container/node_modules/.uuid-bJQR8Pxz',
+134 silly reify   '/home/container/node_modules/.bin/uuid': '/home/container/node_modules/.bin/.uuid-GjpJUL4x',
+134 silly reify   '/home/container/node_modules/which': '/home/container/node_modules/.which-a0RAFcK4',
+134 silly reify   '/home/container/node_modules/.bin/which': '/home/container/node_modules/.bin/.which-tv7QeygD',
+134 silly reify   '/home/container/node_modules/window-size': '/home/container/node_modules/.window-size-VGz9cMIq',
+134 silly reify   '/home/container/node_modules/.bin/window-size': '/home/container/node_modules/.bin/.window-size-nIaxZ9XL',
+134 silly reify   '/home/container/node_modules/whois': '/home/container/node_modules/.whois-z6O3vh7Y',
+134 silly reify   '/home/container/node_modules/.bin/whois': '/home/container/node_modules/.bin/.whois-b9jyNnkt',
+134 silly reify   '/home/container/node_modules/yt-search': '/home/container/node_modules/.yt-search-LnpfLjVi',
+134 silly reify   '/home/container/node_modules/.bin/yt-search': '/home/container/node_modules/.bin/.yt-search-dN3xEoA0',
+134 silly reify   '/home/container/node_modules/.bin/yt-search-video': '/home/container/node_modules/.bin/.yt-search-video-OTW1cusV',
+134 silly reify   '/home/container/node_modules/.bin/yt-search-audio': '/home/container/node_modules/.bin/.yt-search-audio-xNsoPzsE',
+134 silly reify   '/home/container/node_modules/@adiwajshing/baileys': '/home/container/node_modules/@adiwajshing/.baileys-cZ0hd6bH',
+134 silly reify   '/home/container/node_modules/@aws-sdk/middleware-retry/node_modules/uuid': '/home/container/node_modules/@aws-sdk/middleware-retry/node_modules/.uuid-8YCDnpjx',
+134 silly reify   '/home/container/node_modules/@aws-sdk/middleware-retry/node_modules/.bin/uuid': '/home/container/node_modules/@aws-sdk/middleware-retry/node_modules/.bin/.uuid-OCfgv97M',
+134 silly reify   '/home/container/node_modules/@jimp/core/node_modules/mkdirp': '/home/container/node_modules/@jimp/core/node_modules/.mkdirp-YHrJDJJg',
+134 silly reify   '/home/container/node_modules/@jimp/core/node_modules/.bin/mkdirp': '/home/container/node_modules/@jimp/core/node_modules/.bin/.mkdirp-YvKu0r9K',
+134 silly reify   '/home/container/node_modules/@mapbox/node-pre-gyp': '/home/container/node_modules/@mapbox/.node-pre-gyp-J7d3cN21',
+134 silly reify   '/home/container/node_modules/.bin/node-pre-gyp': '/home/container/node_modules/.bin/.node-pre-gyp-kQ3Tu57Z',
+134 silly reify   '/home/container/node_modules/sshpk': '/home/container/node_modules/.sshpk-pbW7LSLy',
+134 silly reify   '/home/container/node_modules/.bin/sshpk-conv': '/home/container/node_modules/.bin/.sshpk-conv-pZmWOdYB',
+134 silly reify   '/home/container/node_modules/.bin/sshpk-sign': '/home/container/node_modules/.bin/.sshpk-sign-dkWzsPot',
+134 silly reify   '/home/container/node_modules/.bin/sshpk-verify': '/home/container/node_modules/.bin/.sshpk-verify-RLjELPn5'
+134 silly reify }
+135 timing reify:rollback:retireShallow Completed in 8ms
+136 timing command:install Completed in 11342ms
+137 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/container/node_modules/libsignal' -> '/home/container/node_modules/.libsignal-mQOErmg7'
+138 verbose cwd /home/container
+139 verbose Linux 5.4.0-137-generic
+140 verbose node v18.15.0
+141 verbose npm  v9.6.2
+142 error code ENOTEMPTY
+143 error syscall rename
+144 error path /home/container/node_modules/libsignal
+145 error dest /home/container/node_modules/.libsignal-mQOErmg7
+146 error errno -39
+147 error ENOTEMPTY: directory not empty, rename '/home/container/node_modules/libsignal' -> '/home/container/node_modules/.libsignal-mQOErmg7'
+148 verbose exit -39
+149 timing npm Completed in 11411ms
+150 verbose unfinished npm timer reify 1680327940724
+151 verbose unfinished npm timer reify:retireShallow 1680327952008
+152 verbose code -39
+153 error A complete log of this run can be found in:
+153 error     /home/container/.npm/_logs/2023-04-01T05_45_40_657Z-debug-0.log

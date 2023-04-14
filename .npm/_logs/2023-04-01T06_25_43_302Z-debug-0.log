@@ -1,0 +1,37 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.6.2
+2 info using node@v18.15.0
+3 timing npm:load:whichnode Completed in 9ms
+4 timing config:load:defaults Completed in 27ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 10ms
+6 timing config:load:builtin Completed in 10ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 42ms
+10 timing config:load:file:/home/container/.npmrc Completed in 2ms
+11 timing config:load:user Completed in 4ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 4ms
+13 timing config:load:global Completed in 7ms
+14 timing config:load:setEnvs Completed in 4ms
+15 timing config:load Completed in 101ms
+16 timing npm:load:configload Completed in 104ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm start
+20 verbose argv "start"
+21 timing npm:load:setTitle Completed in 7ms
+22 timing config:load:flatten Completed in 22ms
+23 timing npm:load:display Completed in 26ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-04-01T06_25_43_302Z-
+25 verbose logfile /home/container/.npm/_logs/2023-04-01T06_25_43_302Z-debug-0.log
+26 timing npm:load:logFile Completed in 38ms
+27 timing npm:load:timers Completed in 3ms
+28 timing npm:load:configScope Completed in 1ms
+29 timing npm:load Completed in 193ms
+30 silly logfile start cleaning logs, removing 1 files
+31 silly logfile done cleaning log files
+32 timing command:run-script Completed in 12316ms
+33 timing command:start Completed in 12356ms
+34 verbose exit 1
+35 timing npm Completed in 12606ms
+36 verbose code 1
